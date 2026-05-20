@@ -61,6 +61,7 @@ Observation:
 
 - Docker daemon CPU and memory usage are low.
 - No unusual resource spikes observed.
+
 **Command 7**
 
 - free -h
