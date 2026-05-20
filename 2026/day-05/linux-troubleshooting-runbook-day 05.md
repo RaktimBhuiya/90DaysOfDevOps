@@ -4,7 +4,7 @@
 **Service**: docker
 **Purpose**: Container runtime service used to run and manage containers.
 
-1. # Environment Basics
+# 1. Environment Basics
 **Command 1**
 
 - uname -a
@@ -23,7 +23,7 @@ Observation:
 - Confirmed Linux distribution and OS version.
 - Useful for checking package/service compatibility.
 
-2. # Filesystem Sanity
+# 2. Filesystem Sanity
 
 **Command 3**
 
@@ -32,6 +32,7 @@ Observation:
 **Observation:**
 
 - Temporary troubleshooting workspace created successfully.
+
 **Command 4**
 
 - cp /etc/hosts /tmp/runbook-demo/hosts-copy && ls -l /tmp/runbook-demo
@@ -41,7 +42,7 @@ Observation:
 - File copy operation succeeded.
 - Filesystem is writable and permissions look normal.
 
-3. # Snapshot: CPU & Memory
+# 3. Snapshot: CPU & Memory
 
 **Command 5**
 
@@ -69,7 +70,7 @@ Observation:
 - Sufficient free memory available.
 - No swap pressure detected.
 
-4. # Snapshot: Disk & IO
+# 4. Snapshot: Disk & IO
 
 **Command 8**
 
@@ -97,7 +98,7 @@ Observation:
 - CPU idle time remains healthy.
 - No abnormal IO wait or memory bottlenecks.
 
-5. # Snapshot: Network
+# 5. Snapshot: Network
 
 **Command 11**
 
@@ -114,7 +115,7 @@ curl -I http://localhost
 
 - Local HTTP endpoint responded successfully.
 
-6. # Logs Reviewed
+# 6. Logs Reviewed
 
 **Command 13**
 
@@ -138,12 +139,12 @@ curl -I http://localhost
 
 1. Restart Docker service and monitor behavior:
 
-   systemctl restart docker
+   - systemctl restart docker
 
 2. Increase logging verbosity and capture detailed diagnostics:
 
-   journalctl -u docker -f
+   - journalctl -u docker -f
 
 3. Trace Docker daemon system calls for deeper investigation:
 
-   strace -p $(pidof dockerd)
+   - strace -p $(pidof dockerd)
