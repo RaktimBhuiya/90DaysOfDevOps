@@ -1,7 +1,8 @@
 ## Linux Troubleshooting Runbook
-##Target Service / Process
+**Target Service / Process**
 
 **Service**: docker
+
 **Purpose**: Container runtime service used to run and manage containers.
 
 # 1. Environment Basics
@@ -109,7 +110,9 @@ Observation:
 
 - Verified Docker-related listening ports.
 - No unexpected open ports found.
+
 **Command 12**
+
 curl -I http://localhost
 
 **Observation:**
