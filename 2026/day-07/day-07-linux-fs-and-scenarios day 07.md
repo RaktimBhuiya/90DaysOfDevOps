@@ -30,13 +30,13 @@
 
 **Hands-on task:**
 
-** Find the largest log file in /var/log**
+**Find the largest log file in /var/log**
 - du -sh /var/log/* 2>/dev/null | sort -h | tail -5
 
-** Look at a config file in /etc**
+**Look at a config file in /etc**
 - cat /etc/hostname
 
-** Check your home directory**
+**Check your home directory**
 - ls -la ~
 
 **Part 2: Scenario-Based Practice**
@@ -86,6 +86,34 @@ which process is using high CPU?**
 
 **Hint:**
 
-**Use a command that shows live CPU usage
-Look for processes sorted by CPU percentage
-Note the PID (Process ID) of the top process**
+- Use a command that shows live CPU usage
+- Look for processes sorted by CPU percentage
+- Note the PID (Process ID) of the top process
+
+**Step 1**
+
+- top
+
+**Shows:**
+
+- live CPU usage
+- memory usage
+- running processes
+
+- Top CPU consumers appear at top.
+
+**Press:**
+
+- q
+
+to exit.
+
+**Step 2**
+
+- ps aux --sort=-%cpu | head -10
+
+**Step 3**
+- pidof process_name
+
+**Step 4**
+- ps -p 1023 -o pid,%cpu,%mem,cmd
