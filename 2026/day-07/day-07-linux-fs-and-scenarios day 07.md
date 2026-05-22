@@ -91,25 +91,20 @@ which process is using high CPU?**
 - Note the PID (Process ID) of the top process
 
 **Step 1**
-
 - top
 
 **Shows:**
-
 - live CPU usage
 - memory usage
 - running processes
-
 - Top CPU consumers appear at top.
 
 **Press:**
-
 - q
 
 to exit.
 
 **Step 2**
-
 - ps aux --sort=-%cpu | head -10
 
 **Step 3**
