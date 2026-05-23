@@ -136,7 +136,7 @@ Commands to explore:
 
 **A script at /home/user/backup.sh is not executing.
 When you run it: ./backup.sh
-You get: "Permission denied"
+You get: "Permission denied"**
 
 What commands would you use to fix this?**
 
