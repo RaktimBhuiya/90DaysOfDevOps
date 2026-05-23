@@ -138,7 +138,7 @@ Commands to explore:
 When you run it: ./backup.sh
 You get: "Permission denied"**
 
-What commands would you use to fix this?**
+**What commands would you use to fix this?**
 
 **Hint:**
 
