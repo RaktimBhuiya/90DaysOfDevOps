@@ -112,3 +112,52 @@ to exit.
 
 **Step 4**
 - ps -p 1023 -o pid,%cpu,%mem,cmd
+
+# Scenario 3: Finding Service Logs
+
+**A developer asks: "Where are the logs for the 'docker' service?"
+The service is managed by systemd.
+What commands would you use?**
+
+**Hint:**
+
+- systemd services → logs are in journald
+- Command pattern: journalctl -u <service-name>
+- Use -n flag to limit number of lines
+- Use -f flag to follow logs in real-time (like tail -f)
+
+Commands to explore:
+
+- systemctl status ssh
+- journalctl -u ssh -n 50
+- journalctl -u ssh -f
+
+# Scenario 4: File Permissions Issue
+
+**A script at /home/user/backup.sh is not executing.
+When you run it: ./backup.sh
+You get: "Permission denied"
+
+What commands would you use to fix this?**
+
+**Hint:**
+
+- First: Check what permissions the file has
+- Understand: Files need 'x' (execute) permission to run
+- Fix: Add execute permission with chmod
+
+**Step-by-step solution structure:**
+
+**Step 1: Check current permissions**
+- Command: ls -l /home/user/backup.sh
+- Look for: -rw-r--r-- (notice no 'x' = not executable)
+
+**Step 2: Add execute permission**
+- Command: chmod +x /home/user/backup.sh
+
+**Step 3: Verify it worked**
+- Command: ls -l /home/user/backup.sh
+- Look for: -rwxr-xr-x (notice 'x' = executable)
+
+**Step 4: Try running it**
+- Command: ./backup.sh
