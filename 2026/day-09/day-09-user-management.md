@@ -31,3 +31,28 @@
 - groups professor
 
 ![alt text](image-2.png)
+
+### Task 4: Shared Directory
+
+- mkdir /opt/dev-project
+- chgrp developers /opt/dev-project
+- chmod 775 /opt/dev-project
+- su - tokyo
+- touch /opt/dev-project/tokyo-file.txt
+- su - berkin
+touch /opt/dev-project/berkin-file.txt
+
+![alt text](image-3.png)
+
+### Task 5: Team Workspace
+
+-  useradd -m nairobi
+-  groupadd project-team
+- usermod -aG project-team nairobi
+- usermod -aG project-team tokyo
+- mkdir /opt/team-workspace
+- chgrp project-team /opt/team-workspace
+- chmod 775 /opt/team-workspace
+- touch /opt/team-workspace/nairobi-file.txt
+
+![alt text](image-4.png)
