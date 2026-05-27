@@ -40,3 +40,34 @@
 
 ![alt text](image-2.png)
 
+### Task 5: Recursive Ownership
+
+- mkdir -p heist-project/vault
+- mkdir -p heist-project/plans
+- touch heist-project/vault/gold.txt
+- touch heist-project/plans/strategy.conf
+- groupadd planners
+- chown -R professor:planners heist-project
+- Verify all files -> ls -lR heist-project/
+
+![alt text](image-3.png)
+![alt text](image-4.png)
+
+### Task 6: Practice Challenge
+
+- useradd -m tokyo
+- useradd -m berlin
+- useradd -m nairobi
+- groupadd vault-team
+- groupadd tech-team
+- mkdir bank-heist/
+- touch bank-heist/access-codes.txt
+- touch bank-heist/blueprints.pdf
+- touch bank-heist/escape-plan.txt
+- chown -R tokyo:vault-team access-codes.txt
+- chown -R berlin:tech-team blueprints.pdf
+- chown nairobi:vault-team escape-plan.txt
+- Verify all files -> ls -l
+
+![alt text](image-5.png)
+
