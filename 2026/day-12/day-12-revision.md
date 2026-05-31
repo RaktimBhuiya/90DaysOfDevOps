@@ -22,9 +22,15 @@
 - journalctl -u nginx -n 50 
 - ps aux | grep nginx
 
+![alt text](image.png)
+
 **How do you safely change ownership and permissions without breaking access? Give one example command.**
 
 - chown -R professor:planners heist-project/
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
 
 **What will you focus on improving in the next 3 days?**
 
