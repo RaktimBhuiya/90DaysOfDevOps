@@ -15,7 +15,7 @@
 - Link, Internet, Transport, Application.
 - Practical model used by the Internet and modern networks.
 
-OSI Layer	TCP/IP Layer
+|OSI Layer	    | TCP/IP Layer |
 | :------------ | :----------- |
 |L7 Application |	Application|
 |L6 Presentation|	Application|
