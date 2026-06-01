@@ -36,10 +36,10 @@
 
 **Flow:**
 
-Application Layer  → HTTPS
-Transport Layer    → TCP
-Internet Layer     → IP
-Link Layer         → Ethernet/Wi-Fi
+- Application Layer  → HTTPS
+- Transport Layer    → TCP
+- Internet Layer     → IP
+- Link Layer         → Ethernet/Wi-Fi
 
 Or simply:
 
