@@ -10,12 +10,13 @@
 - The browser sends an HTTP/HTTPS request and receives the webpage content.
 
 **DNS Record Types**
-|Record|	Purpose|
-|A	|Maps a domain name to an IPv4 address.|
-|AAAA|	Maps a domain name to an IPv6 address.|
-|CNAME|	Creates an alias from one domain name to another.|
-|MX|	Specifies the mail servers responsible for receiving email for a domain.|
-|NS|	Specifies the authoritative name servers for a domain.|
+|Record|	Purpose                              |
+|:-----|:-------------------------------------|
+|A	    |Maps a domain name to an IPv4 address.|
+|AAAA  |Maps a domain name to an IPv6 address.|
+|CNAME |Creates an alias from one domain name to another.|
+|MX    |Specifies the mail servers responsible for receiving email for a domain.|
+|NS    |Specifies the authoritative name servers for a domain.|
 
 - dig google .com (google.com.      9       IN      A       172.253.62.100)
 
