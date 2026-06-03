@@ -20,4 +20,5 @@
 
 ### Task 5: Error Handling
 
+![alt text](image-6.png)
 

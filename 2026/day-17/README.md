@@ -60,7 +60,7 @@ You will:
 
 ---
 
- v
+### Task 5: Error Handling
 1. Create `safe_script.sh` that:
    - Uses `set -e` at the top (exit on error)
    - Tries to create a directory `/tmp/devops-test`
