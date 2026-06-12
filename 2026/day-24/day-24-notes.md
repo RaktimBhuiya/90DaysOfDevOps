@@ -3,6 +3,8 @@
 ## Task
 
 ### Task 1: Git Merge — Hands-On
+![alt text](image.png)
+
 **What is a fast-forward merge?**
 - A fast-forward merge happens when the target branch has no new commits since the feature branch was created.
 
@@ -19,6 +21,7 @@ A new merge commit (M) is created to combine both histories.
 - Merge Conflict occurs when Git cannot automatically merge changes because the same part of a file was modified differently in two branches.
 
 ### Task 2: Git Rebase — Hands-On
+![alt text](image-1.png)
 
 **What does rebase actually do to your commits?**
 
@@ -42,7 +45,11 @@ You want to preserve the actual branch history.
 You are combining completed work from different branches.
 The branch is shared with other developers.
 
+### Task 3: Squash Commit vs Merge Commit
+![alt text](image-2.png)
+
 ### Task 4: Git Stash — Hands-On
+![alt text](image-3.png)
 
 **What is the difference between `git stash pop` and `git stash apply`?**
 
@@ -52,6 +59,8 @@ When would you use stash in a real-world workflow?
 - I use Git Stash when I have uncommitted changes but need to temporarily switch tasks without committing incomplete work.
 
 ### Task 5: Cherry Picking
+
+![alt text](image-4.png)
 
 **What does cherry-pick do?**
 
