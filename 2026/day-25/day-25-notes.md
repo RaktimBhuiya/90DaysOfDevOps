@@ -4,13 +4,11 @@
 
 ### Task 1: Git Reset — Hands-On
 
+![alt text](image.png)
 
+### Task 2: Git Revert — Hands-On
 
-
-
-
-
-
+![alt text](image-1.png)
 
 ### Task 3: Reset vs Revert — Summary
 
