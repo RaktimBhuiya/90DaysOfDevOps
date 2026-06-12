@@ -24,6 +24,7 @@
 
 ### Task 4: Branching Strategie
 **GitFlow**
+
 How it works
 
 - GitFlow uses multiple long-lived branches such as main and develop, along with temporary feature, release, and hotfix branches.
