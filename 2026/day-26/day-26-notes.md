@@ -66,6 +66,7 @@
 - gh run watch <run-id>
 
 **How could `gh run` and `gh workflow` be useful in a CI/CD pipeline?**
+
 - gh run and gh workflow are useful in CI/CD pipelines because they allow engineers to monitor, manage, and automate GitHub Actions workflows directly from the terminal. They can be used to check workflow status, trigger workflows manually, view logs for troubleshooting, track build and deployment progress, and automate pipeline operations through scripts, making CI/CD management faster and more efficient.
 
 
