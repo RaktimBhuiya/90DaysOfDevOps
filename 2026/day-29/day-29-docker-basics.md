@@ -96,3 +96,60 @@ Images Containers Networks
       ▼
 Docker Registry
 ```
+
+# Task 2: Install Docker
+
+- sudo apt-get install docker.io
+- docker --version
+- docker run hello-world
+
+![alt text](image.png)
+
+### Task 3: Run Real Containers
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+- docker ps
+- docker ps -a
+- docker stop <container id> && docker rm <container id>
+
+### Task 4: Explore
+
+**Run a Container in Detached Mode — What's Different?**
+
+**Command:**
+
+- docker run -d nginx
+
+**Difference:**
+
+- -d = Detached mode
+- Container runs in the background.
+- Terminal is immediately returned to you.
+- Useful for web servers, databases, APIs, etc.
+
+**Give a Container a Custom Name**
+
+**Command:**
+
+- docker run -d --name my-nginx nginx
+
+**Map a Port from the Container to Your Host**
+
+**Command:**
+
+- docker run -d --name my-nginx -p 8080:80 nginx
+
+**Check Logs of a Running Container**
+
+**Command:**
+
+- docker logs my-nginx
+
+**Run a Command Inside a Running Container**
+
+**Open a shell:**
+
+- docker exec -it my-nginx bash
