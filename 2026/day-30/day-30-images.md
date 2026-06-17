@@ -51,6 +51,20 @@ Layers that add, modify, or delete files consume storage and show a size:
 5MB
 20KB
 ```
+Layers that only add metadata/configuration do not change the filesystem and show 0B:
+```text
+CMD ["nginx"]
+EXPOSE 80
+ENV APP=prod
+WORKDIR /app
+```
+```text
+Example:
+
+0B
+0B
+0B
+```
 
 **What Are Docker Layers and Why Does Docker Use Them?**
 **What are Layers?**
@@ -73,3 +87,35 @@ Layer 2 → apt update
 Layer 3 → nginx installation
 Layer 4 → index.html copied
 ```
+**Why Does Docker Use Layers?**
+
+Docker images are built using layered filesystems. Each instruction in a Dockerfile creates a separate read-only layer. Docker uses layers to improve build speed, reduce storage consumption through layer sharing, and optimize image distribution by downloading only changed layers. Layers that modify the filesystem have a size, while metadata-only instructions such as CMD, ENV, and EXPOSE typically show 0B.
+
+### Task 3: Container Lifecycle
+
+- docker create --name lifecycle-demo ubuntu
+- docker start lifecycle-demo
+- docker pause lifecycle-demo
+- docker unpause lifecycle-demo
+- docker stop lifecycle-demo
+- docker restart lifecycle-demo
+- docker kill lifecycle-demo
+- docker rm lifecycle-demo
+
+![alt text](image-1.png)
+
+### Task 4: Working with Running Containers
+
+- docker run -d --name nginx-web nginx
+- docker logs nginx-web
+- docker logs -f nginx-web
+- docker exec -it nginx-web bash
+- docker exec nginx-web cat /etc/os-release
+- docker inspect nginx-web
+- dokcer inspect nginx-web | grep IPAdress
+- docker inspect nginx-web | grep HostPort
+- docker inspect nginx-web | grep -A 10 Mounts
+
+![alt text](image-2.png)
+![alt text](image-3.png)
+![alt text](image-4.png)
