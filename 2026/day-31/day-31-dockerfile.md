@@ -6,7 +6,9 @@
 
 - mkdir my-first-image
 - vim Dockerfile
+
 ![alt text](image.png)
+
 - docker build -t my-ubuntu:v1 .
 - docker run my-ubuntu
 
@@ -15,9 +17,11 @@
 ### Task 2: Dockerfile Instructions
 
 - vim index.html
+
 ![alt text](image-2.png)
 
 - vim Dockerfile
+
 ![alt text](image-3.png)
 
 - docker ps
@@ -27,12 +31,14 @@
 ### Task 3: CMD vs ENTRYPOINT
 1. 
 - ![alt text](image-5.png)
+
 - Output: **Hello**
 - docker run hello-image:v1 date
 - Output: Thu Jun 18 20:22:19 UTC 2026
 
 2. 
 - ![alt text](image-6.png)
+
 - docker run dockefile-entrypoint:v1 hello
 Output: **Hello**
 
