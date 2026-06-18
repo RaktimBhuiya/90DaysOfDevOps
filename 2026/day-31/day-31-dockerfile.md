@@ -30,14 +30,14 @@
 
 ### Task 3: CMD vs ENTRYPOINT
 1. 
-- ![alt text](image-5.png)
+ ![alt text](image-5.png)
 
 - Output: **Hello**
 - docker run hello-image:v1 date
 - Output: Thu Jun 18 20:22:19 UTC 2026
 
 2. 
-- ![alt text](image-6.png)
+ ![alt text](image-6.png)
 
 - docker run dockefile-entrypoint:v1 hello
 Output: **Hello**
