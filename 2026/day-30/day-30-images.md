@@ -119,3 +119,12 @@ Docker images are built using layered filesystems. Each instruction in a Dockerf
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
+
+### Task 5: Cleanup
+
+- docker stop $(docker ps -q)[Lists IDs of running containers only.]
+- docker container prune -f or docker rm $(docker ps -aq)[Remove All Stopped Containers]
+- docker image prune -a -f[Remove Unused Images]
+- docker system df[Check How Much Disk Space Docker Is Using]
+
+![alt text](image-5.png)
