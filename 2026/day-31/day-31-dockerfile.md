@@ -52,7 +52,9 @@ Output: **Hello**
 
 - mkdir nginx:alpine
 - vim Dockerfile
+
 ![alt text](image-7.png)
+
 - docker build -t my-website:v1 .
 - docker run -d -p 8080:80 my-website:v1
 ![alt text](image-8.png)
@@ -60,6 +62,7 @@ Output: **Hello**
 ### Task 5: .dockerignore
 
 - vim .dockerignore
+
 ![alt text](image-9.png)
 
 **Why Do We Use .dockerignore?**
