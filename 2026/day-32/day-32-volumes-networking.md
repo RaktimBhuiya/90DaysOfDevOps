@@ -7,7 +7,8 @@
 1. docker run -d --name pstgres-demo -e POSTGRES_PASSWORD=admin123 -p 5432:5432 postgres
 2. docker exec -it postgres-demo psql -U postgres
 
-3. ```text
+3. 
+```text
 CREATE TABLE employees (
     id SERIAL PRIMARY KEY,
     name VARCHAR(50)
@@ -19,6 +20,7 @@ VALUES ('Raktim');
 SELECT * FROM employees;
 ```
 Expected:
+
 ```text
  id |  name
 ----+--------
