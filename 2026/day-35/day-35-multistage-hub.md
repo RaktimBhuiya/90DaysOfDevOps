@@ -4,6 +4,8 @@
 
 ### Task 1: The Problem with Large Images
 
+Docker file
+
 ![alt text](image-1.png)
 
 ### Task 2: Multi-Stage Build
