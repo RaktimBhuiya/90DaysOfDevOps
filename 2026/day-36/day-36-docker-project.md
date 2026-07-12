@@ -110,3 +110,25 @@ docker compose down
 docker pull yourusername/notes-manager:latest
 ```
 
+## Final Project Structure
+
+```text
+notes-manager/
+│
+├── app.py
+├── Dockerfile
+├── docker-compose.yml
+├── .dockerignore
+├── .env
+├── README.md
+├── requirements.txt
+│
+├── templates/
+│   ├── base.html
+│   ├── index.html
+│   ├── add_note.html
+│   └── edit_note.html
+│
+└── static/
+    └── style.css
+```
