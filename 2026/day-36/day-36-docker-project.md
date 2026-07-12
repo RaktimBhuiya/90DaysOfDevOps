@@ -132,3 +132,80 @@ notes-manager/
 └── static/
     └── style.css
 ```
+
+## What the app does
+
+Notes Manager is a simple web application built with Python Flask and PostgreSQL that allows users to manage their notes efficiently. Users can create new notes, view all saved notes, edit existing notes, and delete notes through an intuitive and responsive web interface. The application uses Flask-SQLAlchemy for database operations and is containerized using Docker and Docker Compose for easy deployment.
+
+## How to run it with Docker Compose
+
+## How to Run with Docker Compose
+
+1. Clone the repository:
+
+```bash
+git clone <your-repository-url>
+cd notes-manager
+```
+
+2. Create a `.env` file in the project root with the required environment variables:
+
+```env
+POSTGRES_DB=notesdb
+POSTGRES_USER=notesuser
+POSTGRES_PASSWORD=notespassword
+DB_HOST=postgres
+DB_PORT=5432
+```
+
+3. Build and start the application:
+
+```bash
+docker compose up --build
+```
+
+Or run it in detached mode:
+
+```bash
+docker compose up -d --build
+```
+
+4. Open your browser and access the application:
+
+```
+http://localhost:5000
+```
+
+If running on an AWS EC2 instance:
+
+```
+http://<EC2-PUBLIC-IP>:5000
+```
+
+5. To stop the application:
+
+```bash
+docker compose down
+```
+
+## Any environment variables needed
+
+Create a `.env` file in the project root with the following variables:
+
+```env
+POSTGRES_DB=notesdb
+POSTGRES_USER=notesuser
+POSTGRES_PASSWORD=notespassword
+DB_HOST=postgres
+DB_PORT=5432
+```
+
+### Description
+
+| Variable | Description |
+|----------|-------------|
+| `POSTGRES_DB` | Name of the PostgreSQL database. |
+| `POSTGRES_USER` | PostgreSQL username used by the application. |
+| `POSTGRES_PASSWORD` | Password for the PostgreSQL user. |
+| `DB_HOST` | Hostname of the PostgreSQL service (Docker Compose service name). |
+| `DB_PORT` | Port on which PostgreSQL is listening (default: `5432`). |
