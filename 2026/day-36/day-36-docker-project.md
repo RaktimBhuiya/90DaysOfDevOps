@@ -137,7 +137,7 @@ notes-manager/
 
 Notes Manager is a simple web application built with Python Flask and PostgreSQL that allows users to manage their notes efficiently. Users can create new notes, view all saved notes, edit existing notes, and delete notes through an intuitive and responsive web interface. The application uses Flask-SQLAlchemy for database operations and is containerized using Docker and Docker Compose for easy deployment.
 
-## How to run it with Docker Compose
+
 
 ## How to Run with Docker Compose
 
